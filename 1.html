@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan 1</title>
+</head>
+
+<body>
+
+    <script>
+        let biodata = {
+            nama: "Muhammad Risano Akbar",
+            address: "jln .jati gaung no 140 padang",
+            hobbies: ['ngoding', 'badminton'],
+            is_married: true,
+            school: {
+                highSchool: "SMAN 4 Padang",
+                university: "Universita Putra Indonesia YPTK Padang"
+            },
+            skill: [{ name: "java script", score: 89 }, { name: "php", score: 93 }]
+
+
+        }
+
+        function tampilData(data) {
+            let databiodata = JSON.stringify(data);
+            return databiodata;
+
+        }
+        console.log(tampilData(biodata));
+
+    </script>
+</body>
+
+</html>
